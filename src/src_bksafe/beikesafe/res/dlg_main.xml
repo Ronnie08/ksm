@@ -1,0 +1,99 @@
+﻿<layer title="保密性PC安全性检查 高管定制版v1.1" width="800" height="570" appwin="1" resize="1">
+  <header class="mainhead" width="full" height="23">
+    <dlgfile pos="0,0,-0,-0" src="509" />
+  </header>
+  <footer class="mainfoot" width="full" height="23">
+    <dlgfile pos="0,0,-0,-0" src="508" />
+  </footer>
+  <body class="mainbody" width="full" height="full">
+    <tabctrl id="136" tabwidth="71" tabheight="71" tabskin="tabmain" iconskin="logomodule" splitterskin1="tabmainsplitter" tabspacing="5" tabpos="1" framepos="7" pos="0,4,-0,-1" icon-x="10" icon-y="1" text-x="0" text-y="25">
+  <!--首页修改内容部分-->    
+      
+      <tab title="首页" width="full" height="full" crtext="000000">
+       <dlg pos="0,2,-0,-0">        
+         <realwnd id="600" ctrlid="600" pos="0,0,-0,-0" />
+          <!--添加部分-->
+
+
+          <!--添加部分--> 
+        </dlg>
+      </tab>
+    
+<!--首页修改内容部分-->
+
+      <tab title="基本检查" width="full" height="full" crtext="000000">
+        <!--<dlgfile pos="0,0,-0,-0" src="507" />-->
+        <dlg pos="0,2,-0,-0">
+          <realwnd id="601" ctrlid="601" pos="0,0,-0,-0" />
+        </dlg>
+        <dlg pos="5,-37,-5,-5" width="full" height="30">
+
+          <button id="1026" pos="-105,2,-2,-2" class="common_btn"></button>
+        </dlg>
+        
+        
+        
+        
+        <!--添加部分-->
+        <tabctrl id="10641" cursel="0" tabwidth="105" tabskin="tab" tabspacing="4" tabpos="10" pos="0,10,-0,-0" frameskin="panelgray" framepos="-1" crtext="000000">
+          <tab id="10770" title="系统账号检查" width="full" height="full" class1="tabpage" >
+            <dlg  pos="5,5,-5,-5" class="panel" width="full" height="full">
+              <realwnd id="2001" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
+            </dlg>
+            <dlg id="1051" show="0" pos="0,0,-0,-0">
+              <button id="1052" pos="-80,0,-0,22" class="normalbtn">重新扫描</button>
+            </dlg>
+          </tab>
+          <tab id="11000" title="共享检查" width="full" height="full" class1="tabpage" >
+            <dlg id="11001" pos="5,5,-5,-5" class="panel">
+              <realwnd id="2010" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
+            </dlg>
+          </tab>
+
+          <tab id="12000" title="启动项检查" width="full" height="full" class1="tabpage" >
+            <dlg id="11002" pos="5,5,-5,-5" class="panel">
+              <realwnd id="2002" ctrlid="2002" pos="2,2,-2,-2"/>
+            </dlg>
+          </tab>
+          
+          <tab id="13000" title="软件安装检查" width="full" height="full" class1="tabpage" >
+            <dlg id="11003" pos="5,5,-5,-5" class="panel">
+              <realwnd id="2003" ctrlid="2002" pos="2,2,-2,-2"/>
+            </dlg>
+          </tab>
+          
+          <tab id="14000" title="关键服务检查" width="full" height="full" class1="tabpage" >
+            <dlg id="11004" pos="5,5,-5,-5" class="panel">
+              <realwnd id="2004" ctrlid="2002" pos="2,2,-2,-2"/>
+            </dlg>
+          </tab>
+          
+          
+        </tabctrl>
+        
+      <!--添加部分-->
+      </tab>
+      
+      
+      
+      
+      <tab title="补丁检查" width="full" height="full" class1="tabpage" crtext="000000">
+        <realwnd id="3000" ctrlid="3000" pos="0,8,-0,-0"/>
+      </tab>
+      
+      <tab title="导出报告" width="full" height="full" class1="tabpage" crtext="000000">
+        <realwnd id="3001" ctrlid="3001" pos="0,8,-0,-0"/>
+            <dlg id="11005" pos="5,5,-5,-5" class=client show =0>
+              <realwnd id="3002" ctrlid="3002" pos="2,2,-2,-2"/>
+                <text pos="70,20" class="boldtext">日志导出成功!</text>
+               <!-- <button id="1330" pos="70,40" class="common_btn">将计算机检查结果发送到信息安全部.</button>-->
+               <text id="1330" pos="70,40" class="linktext">将计算机检查结果发送到信息安全部</text>
+              </dlg>
+      </tab>
+
+
+
+    </tabctrl>
+
+  </body>
+</layer>

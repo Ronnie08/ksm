@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer title="保密性PC安全性检查 高管定制版" width="580" height="420" appwin="1" resize="1">
+  <header class="dlg_header" width="full" height="30">
+    <img pos="8,8" skin="little_logo"/>
+    <text pos="28,10" class="head_text_title">保密性PC安全性检查 高管定制版</text>
+
+    <imgbtn id="102" pos="-105,1" tip="最小化" skin="dlg_btn_min"/>
+    <imgbtn id="101" pos="-74,1" tip="最大化" skin="dlg_btn_max"/>
+    <imgbtn id="100" pos="-43,1" tip="关闭" skin="dlg_btn_close"/>
+  </header>
+
+  <footer class="dlg_footer" width="full" height="50">
+    <dlg pos="0,0,-0,-4" crbg="DCE3EB">
+      <imgbtn id="110" pos="5,5" tip="菜单" skin="dlg_btn_menu"/>
+
+    </dlg>
+  </footer>
+
+  <body class="dlg_body" width="full" height="full">
+    <dlg pos="0,0,-0,-0" crbg="FFFFFF">
+      <tabctrl id="10641" cursel="0" tabwidth="105" tabskin="tab" tabspacing="4" tabpos="10" pos="0,10,-0,-0" frameskin="panelgray" framepos="-1" crtext="000000">
+        <tab id="10770" title="系统账号" width="full" height="full" class1="tabpage" >
+          <dlg  pos="5,5,-5,-40" class="panel" width="full" height="full">
+            <realwnd id="2001" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
+          </dlg>
+
+
+        </tab>
+        <tab id="11000" title="共享情况" width="full" height="full" class1="tabpage" >
+          <dlg id="11001" pos="5,5,-5,-5" class="panel">
+            <realwnd id="2010" pos="1,1,-1,-1" ctrlid="2001" crbg1="FBFCFD" />
+          </dlg>
+        </tab>
+        <tab id="12000" title="启动项" width="full" height="full" class1="tabpage" >
+          <dlg id="11001" pos="5,5,-5,-5" class="panel">
+            <dlg id="22001" pos="5,5,-5,-5" class="tab_header_bg">
+              <dlg id="11003" pos="2,2,-2,85" width="full" height="30">
+                <text class="settingsubtitle" pos="0,0">游戏设置</text>
+                <hr pos="70,6,-0,6" class="settingline"/>
+              </dlg>
+              <dlg id="11002" pos="2,20,-2,50" width="full" height="30">
+                <text id="533" pos="2,8"> 游戏目录:</text>
+                <dlg pos="60,2,-70,-2" class="panel">
+                  <realwnd id="2002" ctrlid="2002" pos="2,2,-2,-2"/>
+                </dlg>
+                <button id="1027" pos="-60,2,-2,-2" class="common_btn">选择目录</button>
+              </dlg>
+              <dlg id="11003" pos="2,55,-2,85" width="full" height="30">
+                <check id="1029" pos="60,2">启用多开</check>
+              </dlg>
+            </dlg>
+
+            <dlg id="22002" pos="5,85,-5,-5" class="tab_header_bg">
+              <dlg id="11003" pos="2,2,-2,85" width="full" height="30">
+                <text class="settingsubtitle" pos="0,0">注入DLL</text>
+                <hr pos="70,6,-0,6" class="settingline"/>
+              </dlg>
+              <dlg id="11002" pos="2,20,-2,80" width="full" height="80">
+                <dlg pos="2,2,-70,60" class="panel">
+                  <realwnd id="2003" ctrlid="2003" pos="2,2,-2,-2"/>
+                </dlg>
+                <button id="1027" pos="-60,2,-2,-32" class="common_btn">添加</button>
+                <button id="1028" pos="-60,30,-2,-2" class="common_btn">删除</button>
+              </dlg>
+
+            </dlg>
+          </dlg>
+        </tab>
+      </tabctrl>
+    </dlg>
+  </body>
+
+</layer>

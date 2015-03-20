@@ -1,0 +1,50 @@
+﻿<dlg pos="0,0,-0,-0">
+	<hr pos="-265,6,-265,-0" crbg="A3BAD2"/>
+	<dlg pos="0,0,-265,-0">
+		<!--新版本体检title部分-->
+		<dlg pos="0,0,-0,104">			
+		</dlg>		
+	</dlg>
+	
+	<dlg pos="-264,0,-0,-0" crtext="000000">
+		<!--推荐-->
+		<dlg pos="0,10,-0,260">
+			<img pos="5,5" skin="iconflash"/>
+			<text pos="25,7" class="boldtext">功能介绍</text>
+			<dlg pos="10,17,-0,-0" crtext="6d6d6d">
+				<dlg id="562" pos="0,10,-10,57" class="btnexamright" onlydrawchild="1" crbg="FF0000">
+					<img pos="15,7" skin="righttopicon" sub="1"/>
+					<text pos="52,9" crtext1="3064A5" font1="0204">基本检查</text>
+					<text pos="52,26" crtext1="777777">电脑常规安全，一目了然</text>
+				</dlg>
+				<dlg id="564" pos="0,57,-10,104" class="btnexamright" onlydrawchild="1" crbg1="FF0000">
+					<img pos="15,7" skin="righttopicon" sub="2"/>
+					<text pos="52,9" crtext1="3064A5" font1="0204">补丁检查</text>
+					<text pos="52,26" crtext1="777777">全面检测安装补丁信息</text>
+				</dlg>
+				<dlg id="572" pos="0,104,-10,151" class="btnexamright" onlydrawchild="1" crbg1="FF0000">
+					<img pos="15,7" skin="righttopicon" sub="3"/>
+					<text pos="52,9" crtext1="3064A5" font1="0204">木马查杀</text>
+					<text pos="52,26" crtext1="777777">专业、快速扫描系统隐藏病毒、木马</text>
+				</dlg>
+				<dlg id="573" pos="0,151,-10,198" class="btnexamright" onlydrawchild="1" crbg1="FF0000">
+					<img pos="15,7" skin="righttopicon" sub="0"/>
+					<text id="581" pos="52,9" crtext1="3064A5" font1="0204">软件管理</text>
+					<text id="582" pos="52,26" crtext1="777777">查看已安装软件、轻松管理与卸载</text>
+				</dlg>
+				<dlg id="570" pos="0,198,-10,245" class="btnexamright" onlydrawchild="1" crbg="FF0000">
+					<img pos="15,7" skin="righttopicon" sub="4"/>
+					<text pos="52,9" crtext1="3064A5" font1="0204">插件扫描</text>
+					<text pos="52,26" crtext1="777777">浏览器插件、系统插件，轻松查看</text>
+				</dlg>
+
+			</dlg>
+		</dlg>
+		<!--网页-->
+<!--	
+    <dlg pos="11,272,-10,-12" show="1">
+			<realwnd id="114" pos="0,0,-0,-0" ctrlid="114"/>
+		</dlg>
+-->
+  </dlg>
+</dlg>

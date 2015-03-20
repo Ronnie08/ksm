@@ -5,6 +5,12 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+#obj or exe
+.obj
+.exe
+.old
+.bak
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 

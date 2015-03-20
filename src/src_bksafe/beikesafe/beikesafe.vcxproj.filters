@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="dialogs">
+      <UniqueIdentifier>{e0379f38-fa8b-4d80-b5a3-7af3987e4dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\xml">
+      <UniqueIdentifier>{a4bfb3b1-d31c-410c-a919-72dbc4dd58a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bmp">
+      <UniqueIdentifier>{a3399a27-1846-48f7-a299-9e21945c8688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ico">
+      <UniqueIdentifier>{1e057ea0-20ea-43bf-a9b1-df08ef6da7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\dlgfile_xml">
+      <UniqueIdentifier>{737ce5ac-58e0-4469-b50e-e1d313e0db14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vulfix">
+      <UniqueIdentifier>{fbbafa0a-0858-47ff-bb8d-c7e17aed2d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import">
+      <UniqueIdentifier>{c688045a-254c-438d-9ee4-678e278bd9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\tinyxml">
+      <UniqueIdentifier>{b8945b70-fdcb-4317-9b7a-b0e0a0dca2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\bkwin">
+      <UniqueIdentifier>{43449336-54b3-49fa-b4aa-be8d693a9972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\md5">
+      <UniqueIdentifier>{ae880950-cb72-4ba3-9ba4-05377698528d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="beikesafe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="beikesafeexamuihandler.cpp">
+      <Filter>dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="beikesafemaindlg.cpp">
+      <Filter>dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="beikesafemsgbox.cpp">
+      <Filter>dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\BeikeVulfixEngine.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\BeikeVulfixFileLog.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\BeikeVulfixHandler.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\BeikeVulfixUtils.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\DlgShutdownPrompt.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\DlgViewDetail.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\HyperTextCtrl.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\HyperTextParser.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\ListViewCtrlEx.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulfix\RichEditCtrlEx.cpp">
+      <Filter>Vulfix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinystr.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinyxml.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinyxmlerror.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinyxmlparser.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\md5\md5.c">
+      <Filter>import\md5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="beikesafe.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\builder\buildcfg\buildcfg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="f:\TO Learn\jinshan\oss\kclear\src\import\kclear_include\kclear\iikclear.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="beikesafeexamuihandler.h">
+      <Filter>dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="beikesafemaindlg.h">
+      <Filter>dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="beikesafemsgbox.h">
+      <Filter>dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="bkwinres.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\buildcfg\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\BeikeVulfix.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\BeikeVulfixEngine.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\BeikeVulfixFileLog.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\BeikeVulfixHandler.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\BeikeVulfixUtils.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\DlgShutdownPrompt.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\DlgViewDetail.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\HyperTextCtrl.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\HyperTextParser.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\ListViewCtrlEx.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulfix\RichEditCtrlEx.h">
+      <Filter>Vulfix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\tinyxml\tinystr.h">
+      <Filter>import\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\tinyxml\tinyxml.h">
+      <Filter>import\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkcolor.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkdlgview.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkimage.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkobject.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkskin.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bktheme.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwnd.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwndcmnctrl.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwnddlg.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwnddlgfile.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="bkwndnotify.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwndpanel.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwndstyle.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\bkwin\bkwndtabctrl.h">
+      <Filter>import\bkwin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\md5\md5.h">
+      <Filter>import\md5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="beikesafe.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\publish\bkres\bkres.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\..\include\buildcfg\version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bkwinres.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\def_skin.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\def_string.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\def_style.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\dlg_check_main.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\dlg_main.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\dlg_msgbox.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\dlg_vul_Detail.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\dlg_vul_main.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\dlg_vul_shutdownPrompt.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\panel_vul_display_hide_detail.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\panel_vul_display_show_detail.xml">
+      <Filter>Resource Files\xml</Filter>
+    </None>
+    <None Include="res\pluginlist\check.bmp">
+      <Filter>Resource Files\bmp</Filter>
+    </None>
+    <None Include="res\iefix\iefix_left_bk.bmp">
+      <Filter>Resource Files\bmp</Filter>
+    </None>
+    <None Include="res\iefix\iefix_left_btn_sel.bmp">
+      <Filter>Resource Files\bmp</Filter>
+    </None>
+    <None Include="res\iefix\iefix_left_line.bmp">
+      <Filter>Resource Files\bmp</Filter>
+    </None>
+    <None Include="res\subitem_normal.bmp">
+      <Filter>Resource Files\bmp</Filter>
+    </None>
+    <None Include="res\beikesafe.ico">
+      <Filter>Resource Files\ico</Filter>
+    </None>
+    <None Include="res\small.ico">
+      <Filter>Resource Files\ico</Filter>
+    </None>
+    <None Include="res\dlgfile_foot.xml">
+      <Filter>Resource Files\dlgfile_xml</Filter>
+    </None>
+    <None Include="res\dlgfile_header.xml">
+      <Filter>Resource Files\dlgfile_xml</Filter>
+    </None>
+    <None Include="res\dlgfile_home.xml">
+      <Filter>Resource Files\dlgfile_xml</Filter>
+    </None>
+    <None Include="res\dlgfile_opt.xml">
+      <Filter>Resource Files\dlgfile_xml</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\..\include\buildcfg\Microsoft.VC80.CRT.manifest">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

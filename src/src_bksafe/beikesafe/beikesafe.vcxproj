@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E93E6C89-7D4E-42FC-9633-A8134285B5F4}</ProjectGuid>
+    <RootNamespace>beikesafe</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\product\win32d\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\product\win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>$(TargetDir)$(ProjectName).tlb</TypeLibraryName>
+      <OutputDirectory>_idl_gen</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\winsdk\v6.1\Include;../../import;../../publish;../../src_kws;./;../../import/kxe_improve_publish;../../publish/kxescan/systemsecurityex;../../import/kws_include;../../import/kws_publish;../../publish/wtl;../../src_3rdlib/stlsoft/include;../../src_kws/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;BEIKE_SAFE_EXE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)KSafe.exe</OutputFile>
+      <AdditionalLibraryDirectories>E:\winsdk\v6.1\Lib;../../import/kxe_improve_lib/win32d;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>$(TargetDir)$(ProjectName).tlb</TypeLibraryName>
+      <OutputDirectory>_idl_gen</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\winsdk\v6.1\Include;../../import;../../publish;../../src_kws;./;../../import/kxe_improve_publish;../../publish/kxescan/systemsecurityex;../../import/kws_include;../../import/kws_publish;../../publish/wtl;../../src_3rdlib/stlsoft/include;../../src_kws/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;BEIKE_SAFE_EXE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)KSafe.exe</OutputFile>
+      <AdditionalLibraryDirectories>E:\winsdk\v6.1\Lib;../../import/kxe_improve_lib/win32/base_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="beikesafe.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="beikesafeexamuihandler.cpp" />
+    <ClCompile Include="beikesafemaindlg.cpp" />
+    <ClCompile Include="beikesafemsgbox.cpp" />
+    <ClCompile Include="Vulfix\BeikeVulfixEngine.cpp" />
+    <ClCompile Include="Vulfix\BeikeVulfixFileLog.cpp" />
+    <ClCompile Include="Vulfix\BeikeVulfixHandler.cpp" />
+    <ClCompile Include="Vulfix\BeikeVulfixUtils.cpp" />
+    <ClCompile Include="Vulfix\DlgShutdownPrompt.cpp" />
+    <ClCompile Include="Vulfix\DlgViewDetail.cpp" />
+    <ClCompile Include="Vulfix\HyperTextCtrl.cpp" />
+    <ClCompile Include="Vulfix\HyperTextParser.cpp" />
+    <ClCompile Include="Vulfix\ListViewCtrlEx.cpp" />
+    <ClCompile Include="Vulfix\RichEditCtrlEx.cpp" />
+    <ClCompile Include="..\..\publish\tinyxml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\tinyxml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\publish\md5\md5.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="beikesafe.h" />
+    <ClInclude Include="..\..\builder\buildcfg\buildcfg.h" />
+    <ClInclude Include="f:\TO Learn\jinshan\oss\kclear\src\import\kclear_include\kclear\iikclear.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="beikesafeexamuihandler.h" />
+    <ClInclude Include="beikesafemaindlg.h" />
+    <ClInclude Include="beikesafemsgbox.h" />
+    <ClInclude Include="bkwinres.h" />
+    <ClInclude Include="..\..\..\include\buildcfg\resource.h" />
+    <ClInclude Include="Vulfix\BeikeVulfix.h" />
+    <ClInclude Include="Vulfix\BeikeVulfixEngine.h" />
+    <ClInclude Include="Vulfix\BeikeVulfixFileLog.h" />
+    <ClInclude Include="Vulfix\BeikeVulfixHandler.h" />
+    <ClInclude Include="Vulfix\BeikeVulfixUtils.h" />
+    <ClInclude Include="Vulfix\DlgShutdownPrompt.h" />
+    <ClInclude Include="Vulfix\DlgViewDetail.h" />
+    <ClInclude Include="Vulfix\HyperTextCtrl.h" />
+    <ClInclude Include="Vulfix\HyperTextParser.h" />
+    <ClInclude Include="Vulfix\ListViewCtrlEx.h" />
+    <ClInclude Include="Vulfix\RichEditCtrlEx.h" />
+    <ClInclude Include="..\..\publish\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\publish\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkcolor.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkdlgview.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkimage.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkobject.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkskin.h" />
+    <ClInclude Include="..\..\publish\bkwin\bktheme.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwnd.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwndcmnctrl.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwnddlg.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwnddlgfile.h" />
+    <ClInclude Include="bkwndnotify.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwndpanel.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwndstyle.h" />
+    <ClInclude Include="..\..\publish\bkwin\bkwndtabctrl.h" />
+    <ClInclude Include="..\..\publish\md5\md5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="beikesafe.rc" />
+    <ResourceCompile Include="..\..\publish\bkres\bkres.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\..\include\buildcfg\version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bkwinres.rc2" />
+    <None Include="res\def_skin.xml" />
+    <None Include="res\def_string.xml" />
+    <None Include="res\def_style.xml" />
+    <None Include="res\dlg_check_main.xml" />
+    <None Include="res\dlg_main.xml" />
+    <None Include="res\dlg_msgbox.xml" />
+    <None Include="res\dlg_vul_Detail.xml" />
+    <None Include="res\dlg_vul_main.xml" />
+    <None Include="res\dlg_vul_shutdownPrompt.xml" />
+    <None Include="res\panel_vul_display_hide_detail.xml" />
+    <None Include="res\panel_vul_display_show_detail.xml" />
+    <None Include="res\pluginlist\check.bmp" />
+    <None Include="res\iefix\iefix_left_bk.bmp" />
+    <None Include="res\iefix\iefix_left_btn_sel.bmp" />
+    <None Include="res\iefix\iefix_left_line.bmp" />
+    <None Include="res\subitem_normal.bmp" />
+    <None Include="res\beikesafe.ico" />
+    <None Include="res\small.ico" />
+    <None Include="res\dlgfile_foot.xml" />
+    <None Include="res\dlgfile_header.xml" />
+    <None Include="res\dlgfile_home.xml" />
+    <None Include="res\dlgfile_opt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\..\include\buildcfg\Microsoft.VC80.CRT.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeikeUtils\BeikeUtils.vcxproj">
+      <Project>{5f41920b-2e7e-436b-8a5c-2845cac727d9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
